@@ -1,1 +1,67 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.navbar {
+  margin-top: 1rem;
+  position: relative;
+  height: 3rem;
+}
+
+.logo-box {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 1rem;
+  z-index: 3;
+}
+
+img.logo {
+  width: 40px;
+  margin-right: 0.7rem;
+}
+
+a.logo {
+  color: #ffffff;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+a.logo:hover {
+  font-style: italic;
+}
+
+a.logo strong {
+  font-weight: 600;
+}
+
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  z-index: 3;
+  -webkit-transition: all ease-in-out;
+  transition: all ease-in-out;
+}
+
+.menu-btn .btn-line {
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  margin-bottom: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #444;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=main.css.map */
