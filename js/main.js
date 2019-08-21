@@ -1,8 +1,8 @@
 // Select DOM Items
-const menuBtn = document.querySelector("menu-btn");
-const menu = document.querySelector("menu");
-const menuNav = document.querySelector("menu-nav");
-const navItems = document.querySelectorAll("nav-item");
+const menuBtn = document.querySelector(".menu-btn");
+const menu = document.querySelector(".menu");
+const menuNav = document.querySelector(".menu-nav");
+const navItems = document.querySelectorAll(".nav-item");
 
 // Set initial state of menu
 let showMenu = false;
