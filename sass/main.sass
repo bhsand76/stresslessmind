@@ -1,5 +1,5 @@
 @import "partials/_config"
-@import "partials/_navbar"
+@import "partials/_header"
 
 
 *
@@ -10,18 +10,39 @@
 body
     font-family: 'Roboto', sans-serif;
     background: #fff
+    letter-spacing: .7px
+    line-height: 1.2
+    height: 2000px
 
 .container
     max-width: 900px
     margin: 0 auto
 
-a
+.btn
     color: #ffffff
     text-decoration: none
-    text-transform: uppercase
-    margin: 2rem
+    background: #EF959C
+    padding: 0.7rem 1.2rem
+    border-radius: 1.5rem
 
-.btn
-    background: #d9534f
-    padding: 1rem 2rem
-    border-radius: 2rem
+// hero section
+.hero-wrap
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/hero.jpg")
+    background-size: cover
+    min-height: 400px
+
+#hero
+    padding: 3rem 1rem 5rem
+
+    h1, h2
+        color: rgba(255, 255, 255, 1)
+    
+    h1
+        font-size: 2.5rem
+        font-weight: 300
+    
+    h2
+        margin-top: 1rem
+        margin-bottom: 3rem
+        font-weight: 100
+        color: rgba(255, 255, 255, 0.75)

@@ -1,74 +1,62 @@
-h1.header {
-  font-size: 2.5rem;
-  padding: 4rem 2rem 2rem 2rem;
+header {
+  height: 4.5rem;
+  padding: 1rem;
+  width: 100%;
+  -webkit-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
 }
 
-h2.header {
-  padding: 1rem 2rem 2rem;
+header.scrolled {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
 }
 
-.navbar {
-  padding-top: 1rem;
-  position: relative;
-  height: 3rem;
-}
-
-.logo-box {
-  position: absolute;
+header .logo-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  left: 1rem;
-  z-index: 3;
+  float: left;
 }
 
-img.logo {
+header .logo-box img {
   width: 40px;
   margin-right: 0.7rem;
 }
 
-a.logo {
-  color: #ffffff;
+header .logo-box a {
+  color: rgba(255, 255, 255, 0.75);
   font-weight: 100;
   text-decoration: none;
 }
 
-a.logo:hover {
+header .logo-box a:hover {
   font-style: italic;
 }
 
-a.logo strong {
-  font-weight: 600;
+header .logo-box a span {
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
-.menu-btn {
+header .menu-btn {
   cursor: pointer;
-  position: absolute;
+  float: right;
   right: 1rem;
+  margin-top: 0.7rem;
   z-index: 3;
-  -webkit-transition: all ease-in-out;
-  transition: all ease-in-out;
+  -webkit-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
 }
 
-.menu-btn .btn-line {
+header .menu-btn .btn-line {
   width: 28px;
   height: 3px;
   background: #fff;
   margin-bottom: 5px;
 }
 
-header {
-  background: url("../img/hero.jpg");
-  background-size: cover;
-  padding: 2rem;
-}
-
-header .header {
-  color: #ffffff;
-  font-weight: 300;
-}
-
-.menu {
+header .menu {
   visibility: hidden;
 }
 
@@ -82,6 +70,9 @@ header .header {
 body {
   font-family: 'Roboto', sans-serif;
   background: #fff;
+  letter-spacing: .7px;
+  line-height: 1.2;
+  height: 2000px;
 }
 
 .container {
@@ -89,16 +80,38 @@ body {
   margin: 0 auto;
 }
 
-a {
+.btn {
   color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;
-  margin: 2rem;
+  background: #EF959C;
+  padding: 0.7rem 1.2rem;
+  border-radius: 1.5rem;
 }
 
-.btn {
-  background: #d9534f;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
+.hero-wrap {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../img/hero.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/hero.jpg");
+  background-size: cover;
+  min-height: 400px;
+}
+
+#hero {
+  padding: 3rem 1rem 5rem;
+}
+
+#hero h1, #hero h2 {
+  color: white;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+#hero h2 {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.75);
 }
 /*# sourceMappingURL=main.css.map */
