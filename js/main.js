@@ -31,7 +31,7 @@ function toggleMenu() {
 
 
 $(window).scroll(function(){
-  if ($(this).scrollTop() > 100) {
+  if ($(this).scrollTop() > 400) {
     $('#header').addClass('scrolled');
   } else {
     $('#header').removeClass('scrolled');
