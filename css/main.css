@@ -40,6 +40,7 @@ header .logo-box a span {
 }
 
 .menu-btn {
+  position: relative;
   cursor: pointer;
   float: right;
   right: 1rem;
