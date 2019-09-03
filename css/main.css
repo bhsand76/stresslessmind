@@ -19,13 +19,14 @@ header .logo-box {
 }
 
 header .logo-box img {
-  width: 40px;
+  width: 70px;
   margin-right: 0.7rem;
 }
 
 header .logo-box a {
   color: rgba(255, 255, 255, 0.75);
   font-weight: 100;
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
@@ -36,7 +37,7 @@ header .logo-box a:hover {
 header .logo-box a span {
   color: white;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.75rem;
 }
 
 .menu-btn {
@@ -89,7 +90,7 @@ header .logo-box a span {
   visibility: visible;
 }
 
-.menu-nav {
+.menu .menu-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,48 +117,48 @@ header .logo-box a span {
   transition: all 0.5s ease-out;
 }
 
-.menu-nav.show {
+.menu .menu-nav.show {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
 
-.nav-item {
+.menu .nav-item {
   -webkit-transform: translate3d(600px, 0, 0);
           transform: translate3d(600px, 0, 0);
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
-.nav-item.show {
+.menu .nav-item.current > a {
+  color: #eece1a;
+}
+
+.menu .nav-item.show {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
 
-.nav-item.current > a {
-  color: #eece1a;
-}
-
-.nav-item:nth-child(1) {
+.menu .nav-item:nth-child(1) {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
 
-.nav-item:nth-child(2) {
+.menu .nav-item:nth-child(2) {
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
 }
 
-.nav-item:nth-child(3) {
+.menu .nav-item:nth-child(3) {
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
 
-.nav-item:nth-child(4) {
+.menu .nav-item:nth-child(4) {
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
 
-.nav-item .nav-link {
+.menu .nav-item .nav-link {
   display: inline-block;
   position: relative;
   font-size: 30px;
@@ -170,7 +171,7 @@ header .logo-box a span {
   transition: all 0.5s ease-out;
 }
 
-.nav-item .nav-link:hover {
+.menu .nav-item .nav-link:hover {
   color: #eece1a;
 }
 
@@ -182,7 +183,7 @@ header .logo-box a span {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: #fff;
   letter-spacing: .7px;
   line-height: 1.2;
@@ -199,7 +200,7 @@ body {
   text-decoration: none;
   background: #EF959C;
   padding: 0.7rem 1.2rem;
-  border-radius: 1.5rem;
+  border: none;
 }
 
 .hero-wrap {
@@ -210,22 +211,44 @@ body {
 }
 
 #hero {
-  padding: 3rem 1rem 5rem;
+  padding-top: 3rem;
 }
 
 #hero h1, #hero h2 {
   color: white;
+  font-weight: 300;
+  margin: 0 1rem;
 }
 
 #hero h1 {
   font-size: 2.5rem;
-  font-weight: 300;
 }
 
 #hero h2 {
   margin-top: 1rem;
-  margin-bottom: 3rem;
-  font-weight: 100;
+  font-size: 1.5rem;
+  margin-bottom: 4.5rem;
+  font-style: italic;
   color: rgba(255, 255, 255, 0.75);
+}
+
+.news {
+  background: rgba(120, 120, 120, 0.9);
+  color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.news input {
+  margin-top: 1rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
+  padding: .5rem;
+  width: 250px;
+}
+
+.news input[type="submit"] {
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

@@ -9,7 +9,7 @@
     box-sizing: border-box
 
 body
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif
     background: #fff
     letter-spacing: .7px
     line-height: 1.2
@@ -24,7 +24,8 @@ body
     text-decoration: none
     background: #EF959C
     padding: 0.7rem 1.2rem
-    border-radius: 1.5rem
+    //border-radius: 1.5rem
+    border: none
 
 // hero section
 .hero-wrap
@@ -33,17 +34,36 @@ body
     min-height: 400px
 
 #hero
-    padding: 3rem 1rem 5rem
+    padding-top: 3rem
 
     h1, h2
         color: rgba(255, 255, 255, 1)
+        font-weight: 300
+        margin: 0 1rem
     
     h1
         font-size: 2.5rem
-        font-weight: 300
     
     h2
         margin-top: 1rem
-        margin-bottom: 3rem
-        font-weight: 100
+        font-size: 1.5rem
+        margin-bottom: 4.5rem
+        font-style: italic
         color: rgba(255, 255, 255, 0.75)
+
+.news
+    background: rgba(120, 120, 120, .9)
+    color: rgba(255, 255, 255, .7)
+    width: 100%
+    padding: 1rem 0
+    text-align: center
+
+    input
+        margin-top: 1rem
+        margin-right: .5rem
+        margin-left: .5rem
+        padding: .5rem
+        width: 250px
+
+        &[type="submit"]
+            cursor: pointer
