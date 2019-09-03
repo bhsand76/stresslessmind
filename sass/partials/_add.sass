@@ -1,16 +1,44 @@
 .add
     position: fixed
-    width: auto
+    width: 300px
     height: auto
     bottom: 0
-    right: 0
-    background: #66666666
-    color: #ffffff
+    right: 1rem
+    background: #ffffff
+    border-radius: .4rem .4rem 0 0
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1)
 
-    add-header
+    .add-header
+        height: 2rem
+        background: #333
+        border-radius: .4rem .4rem 0 0
+
+        .close-button
+            width: 1.2rem
+            height: 1.2rem
+            cursor: pointer
+            position: absolute
+            right: .3rem
+            top: .5rem
+
+            .add-close-line
+                background: #fff
+                width: 1.2rem
+                height: 0.2rem
+                position: absolute
+                top: .4rem
+                right: 9
 
 
+            .line-one
+                transform: rotate(45deg)
 
-    add-body
+
+            .line-two
+                transform: rotate(-45deg)
+
+
+    .add-body
         padding: 2rem
+
     
