@@ -89,7 +89,7 @@ header .logo-box a span {
   visibility: visible;
 }
 
-.menu-nav {
+.menu .menu-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,48 +116,48 @@ header .logo-box a span {
   transition: all 0.5s ease-out;
 }
 
-.menu-nav.show {
+.menu .menu-nav.show {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
 
-.nav-item {
+.menu .nav-item {
   -webkit-transform: translate3d(600px, 0, 0);
           transform: translate3d(600px, 0, 0);
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
-.nav-item.show {
+.menu .nav-item.current > a {
+  color: #eece1a;
+}
+
+.menu .nav-item.show {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
 
-.nav-item.current > a {
-  color: #eece1a;
-}
-
-.nav-item:nth-child(1) {
+.menu .nav-item:nth-child(1) {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
 
-.nav-item:nth-child(2) {
+.menu .nav-item:nth-child(2) {
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
 }
 
-.nav-item:nth-child(3) {
+.menu .nav-item:nth-child(3) {
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
 
-.nav-item:nth-child(4) {
+.menu .nav-item:nth-child(4) {
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
 
-.nav-item .nav-link {
+.menu .nav-item .nav-link {
   display: inline-block;
   position: relative;
   font-size: 30px;
@@ -170,8 +170,22 @@ header .logo-box a span {
   transition: all 0.5s ease-out;
 }
 
-.nav-item .nav-link:hover {
+.menu .nav-item .nav-link:hover {
   color: #eece1a;
+}
+
+.add {
+  position: fixed;
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background: #66666666;
+  color: #ffffff;
+}
+
+.add add-body {
+  padding: 2rem;
 }
 
 * {
