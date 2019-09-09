@@ -37,3 +37,33 @@ $(window).scroll(function(){
     $('#header').removeClass('scrolled');
   }
 });
+
+
+//Select DOM items as variables
+const closeBtn = document.querySelector(".close-button");
+const addBody = document.querySelector(".add-body");
+const addLineOne = document.querySelector(".line-one");
+const addLineTwo = document.querySelector(".line-two");
+
+// Set initial state of Add
+let showAdd = true;
+
+closeBtn.addEventListener("click", hideAdd);
+
+function hideAdd() {
+  if (showAdd) {
+    addBody.classList.add("close");
+    addLineOne.classList.add("close");
+    addLineTwo.classList.add("close");
+
+    // Set Add State
+    showAdd = false;
+  } else {
+    addBody.classList.remove("close");
+    addLineOne.classList.remove("close");
+    addLineTwo.classList.remove("close");
+
+    // Set Add State
+    showAdd = true;
+  }
+}

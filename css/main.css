@@ -177,13 +177,37 @@ header .logo-box a span {
 .add {
   position: fixed;
   width: 300px;
-  height: auto;
+  height: 0;
   bottom: 0;
   right: 1rem;
   background: #ffffff;
   border-radius: .4rem .4rem 0 0;
   -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+  -webkit-animation: add-animation .75s forwards 5s;
+          animation: add-animation .75s forwards 5s;
+}
+
+@-webkit-keyframes add-animation {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: auto;
+    opacity: 1;
+  }
+}
+
+@keyframes add-animation {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: auto;
+    opacity: 1;
+  }
 }
 
 .add .add-header {
@@ -215,13 +239,26 @@ header .logo-box a span {
           transform: rotate(45deg);
 }
 
+.add .add-header .close-button .line-one.close {
+  display: none;
+}
+
 .add .add-header .close-button .line-two {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
+.add .add-header .close-button .line-two.close {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 .add .add-body {
   padding: 2rem;
+}
+
+.add .add-body.close {
+  display: none;
 }
 
 * {

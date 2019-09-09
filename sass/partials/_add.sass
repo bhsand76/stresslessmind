@@ -1,12 +1,21 @@
 .add
     position: fixed
     width: 300px
-    height: auto
+    height: 0
     bottom: 0
     right: 1rem
     background: #ffffff
     border-radius: .4rem .4rem 0 0
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1)
+    animation: add-animation .75s forwards 5s
+
+    @keyframes add-animation
+        0%
+            height: 0
+            opacity: 0
+        100%
+            height: auto
+            opacity: 1
 
     .add-header
         height: 2rem
@@ -33,12 +42,21 @@
             .line-one
                 transform: rotate(45deg)
 
+                &.close
+                    display: none
+
 
             .line-two
                 transform: rotate(-45deg)
 
+                &.close
+                    transform: rotate(0deg)
+
 
     .add-body
         padding: 2rem
+
+        &.close
+            display: none
 
     
